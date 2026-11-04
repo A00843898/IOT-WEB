@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB 02 - UX/UI Redesign: YouTube Loop Feature</title>
+</head>
+<body style="background-image: url('fondo azul espacio.jpg'); background-size: cover; background-attachment: fixed; margin: 0; padding: 40px 20px; font-family: 'Century Gothic', sans-serif;">
+
+    <!-- Botón para regresar al Index -->
+    <div style="max-width: 900px; margin: 0 auto 20px auto;">
+        <a href="index.html" style="
+            display: inline-block;
+            background-color: #003B6F; 
+            color: #FFFFFF; 
+            text-decoration: none; 
+            padding: 10px 20px; 
+            border-radius: 6px; 
+            font-weight: bold; 
+            font-size: 0.9rem; 
+            letter-spacing: 1px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.15);">
+            ← BACK TO LABS
+        </a>
+    </div>
+
+    <!-- Título Principal -->
+    <div style="max-width: 900px; margin: 0 auto 30px auto; text-align: center;">
+        <h1 style="font-size: 55px; color: #161f43; text-shadow: 2px 2px 4px #003B6F; font-family: 'Futura', 'Arial Black', sans-serif; font-weight: 900; letter-spacing: 1px; margin-bottom: 10px;">
+            LAB 02 — UX/UI REDESIGN
+        </h1>
+        <p style="color: #242528; font-size: 20px; font-weight: bold; margin-top: 0;">
+            Redesigning YouTube’s Loop Feature & Video Interface
+        </p>
+        <p style="color: #242528; font-size: 16px;">
+            Georgina García Martínez - A00843898
+        </p>
+    </div>
+
+    <!-- Contenedor Principal de Contenido -->
+    <div style="max-width: 900px; margin: 0 auto;">
+
+        <!-- 1. SELECTED APPLICATION -->
+        <div style="background-color: rgba(255, 255, 255, 0.9); padding: 30px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin-bottom: 30px;">
+            <h2 style="color: #003B6F; font-family: 'Futura', sans-serif; font-size: 24px; margin-top: 0; border-bottom: 2px solid #003B6F; padding-bottom: 8px;">
+                1. Selected Application & Feature
+            </h2>
+            <p style="color: #242528; font-size: 15px; line-height: 1.6;">
+                <strong>Application:</strong> YouTube (Mobile / Desktop)<br>
+                <strong>Selected Feature:</strong> Video Loop Control & Playback Interface Organization<br>
+                <strong>Task Description:</strong> Enabling continuous loop playback for specific content (such as study music, white noise, ambient sounds, or 10-hour extended tracks) while interacting with the video interface.
+            </p>
+        </div>
+
+        <!-- 2. CURRENT USER FLOW -->
+        <div style="background-color: rgba(255, 255, 255, 0.9); padding: 30px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin-bottom: 30px;">
+            <h2 style="color: #003B6F; font-family: 'Futura', sans-serif; font-size: 24px; margin-top: 0; border-bottom: 2px solid #003B6F; padding-bottom: 8px;">
+                2. Current User Flow (Before)
+            </h2>
+            <p style="color: #242528; font-size: 15px; line-height: 1.6;">
+                Currently, activating the repeat video option requires navigating through hidden settings menus:
+            </p>
+            <ol style="color: #242528; font-size: 15px; line-height: 1.8; margin-left: 20px;">
+                <li>Open and play a video on YouTube.</li>
+                <li>Tap or click on the <strong>Settings icon </strong> in the video player overlay.</li>
+                <li>Select <strong>Additional settings</strong> from the popup menu.</li>
+                <li>Toggle on <strong>Loop video</strong>.</li>
+            </ol>
+            
+            <div style="text-align: center; margin-top: 20px;">
+                <img src="PASO_UNO.jpeg" alt="Current step 1" style="max-width: 45%; border-radius: 8px; margin: 5px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+                <img src="PASO_DOS.jpeg" alt="Current step 2" style="max-width: 45%; border-radius: 8px; margin: 5px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+            </div>
+        </div>
+
+        <!-- 3. UX ANALYSIS -->
+        <div style="background-color: rgba(255, 255, 255, 0.9); padding: 30px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin-bottom: 30px;">
+            <h2 style="color: #003B6F; font-family: 'Futura', sans-serif; font-size: 24px; margin-top: 0; border-bottom: 2px solid #003B6F; padding-bottom: 8px;">
+                3. UX Analysis & Opportunities for Improvement
+            </h2>
+            <ul style="color: #242528; font-size: 15px; line-height: 1.8; margin-left: 20px;">
+                <li><strong>Excessive Steps:</strong> Activating loop takes 3 to 4 clicks, creating friction for a feature used constantly for study audio or music.</li>
+                <li><strong>Low Discoverability:</strong> The loop feature is buried inside nested submenus instead of being accessible at top-level navigation.</li>
+                <li><strong>Visual Clutter:</strong> The modern layout clusters secondary actions (Like, Share, Save, Clip) with equal visual weight, causing cognitive overload.</li>
+                <li><strong>Lack of Immediate Feedback:</strong> It is difficult to notice at a glance whether loop mode is active without re-opening settings.</li>
+            </ul>
+        </div>
+
+        <!-- 4. DESIGN PROPOSAL & PROPOSED USER FLOW -->
+        <div style="background-color: rgba(255, 255, 255, 0.9); padding: 30px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin-bottom: 30px;">
+            <h2 style="color: #003B6F; font-family: 'Futura', sans-serif; font-size: 24px; margin-top: 0; border-bottom: 2px solid #003B6F; padding-bottom: 8px;">
+                4. Proposed Experience & User Flow (After)
+            </h2>
+            <p style="color: #242528; font-size: 15px; line-height: 1.6;">
+                The redesigned proposal introduces a dedicated <strong>Loop Button (🔁)</strong> 
+            </p>
+
+            <p style="color: #242528; font-size: 15px; line-height: 1.6;">
+                <strong>New User Flow (Reduced to 1 Step):</strong><br>
+                1. Tap the direct <strong>Loop Icon</strong> in the player overlay to instantly toggle repeat mode on/off.
+            </p>
+
+            <!-- Tus imágenes/mockups del "Después" con el nuevo botón -->
+            <div style="text-align: center; margin-top: 25px;">
+                <h3 style="color: #003B6F; font-family: 'Futura', sans-serif; font-size: 18px;">Redesigned Mockups</h3>
+                <img src="DISPLAY_LOOP.png" alt="Proposed design mockup" style="max-width: 80%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); margin-top: 10px;">
+            </div>
+        </div>
+
+        <!-- 5. JUSTIFICATION -->
+        <div style="background-color: rgba(255, 255, 255, 0.9); padding: 30px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.15); margin-bottom: 30px;">
+            <h2 style="color: #003B6F; font-family: 'Futura', sans-serif; font-size: 24px; margin-top: 0; border-bottom: 2px solid #003B6F; padding-bottom: 8px;">
+                5. Design Justification
+            </h2>
+            <p style="color: #242528; font-size: 15px; line-height: 1.8;">
+                • <strong>Clarity & Efficiency:</strong> Reducing the user journey from 4 steps to 1 direct click eliminates friction and improves task completion speed.<br>
+                • <strong>Visual Hierarchy:</strong> Elevating the loop button to primary controls aligns with user intent when interacting with audio/repetitive video content.<br>
+                • <strong>Instant Visual Feedback:</strong> An active state indicator (highlighted icon/color change) gives clear feedback without extra menu navigation.<br>
+                • <strong>Consistent Design System:</strong> The new button matches YouTube's iconography and visual language seamlessly.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
