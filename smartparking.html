@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 03 — Smart Parking</title>
+    <link rel="stylesheet" href="smartparking.css">
+</head>
+<body>
+
+    <div style="text-align: left; max-width: 900px; margin: 0 auto 15px;">
+        <a href="index.html" class="btn-back">← BACK TO LABS</a>
+    </div>
+
+    <div class="main-container">
+        <h1>SMART PARKING</h1>
+        <p class="subtitle">Tec de Monterrey — Parking Lot Simulation</p>
+
+        <!-- Dashboard con los 4 datos que pide la instrucción -->
+        <div class="dashboard">
+            <div class="box">
+                <h3>Total Spaces</h3>
+                <p id="total">180</p>
+            </div>
+            <div class="box">
+                <h3>Available</h3>
+                <p id="available" style="color: green;">0</p>
+            </div>
+            <div class="box">
+                <h3>Occupied</h3>
+                <p id="occupied" style="color: red;">0</p>
+            </div>
+            <div class="box">
+                <h3>Occupancy</h3>
+                <p id="percentage" style="color: #003B6F;">0%</p>
+            </div>
+        </div>
+
+        <p style="margin: 15px 0; font-size: 14px;">Click on any parking spot to change its status (Available / Occupied):</p>
+
+        <!-- Contenedor con la imagen de fondo y las 5 columnas de 2 filas -->
+        <div class="parking-container">
+            <div class="parking-grid" id="parking-grid">
+                <!-- JavaScript creará aquí las 5 columnas con 36 lugares cada una (180 total) -->
+            </div>
+        </div>
+    </div>
+
+    <script src="smartparking.js"></script>
+</body>
+</html>

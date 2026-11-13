@@ -1,0 +1,132 @@
+body {
+    background-image: url('fondo azul espacio.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Century Gothic', sans-serif;
+    color: #242528;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.btn-back {
+    background-color: #003B6F;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.main-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+h1 {
+    font-family: 'Futura', sans-serif;
+    color: #161f43;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+/* Tablero de estadísticas (4 cajitas) */
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.box {
+    background: white;
+    padding: 15px 10px;
+    border-radius: 8px;
+    width: 24%;
+    border-top: 4px solid #003B6F;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.box h3 {
+    margin: 0 0 5px 0;
+    font-size: 13px;
+    color: #555;
+}
+
+.box p {
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Contenedor con tu imagen de fondo */
+.parking-container {
+    position: relative;
+    width: 100%;
+    max-width: 750px;
+    height: 550px;
+    margin: 0 auto;
+    background-image: url('parking.png'); /* CAMBIA AQUÍ EL NOMBRE DE TU IMAGEN */
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    border: 2px solid #003B6F;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Rejilla principal: 5 columnas separadas por pasillos */
+.parking-grid {
+    width: 85%;
+    height: 82%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columnas */
+    gap: 18px; /* Espacio de los carriles entre columnas */
+    background-color: rgba(0, 0, 0, 0.35); /* Fondo sutil para que se lean bien los números */
+    padding: 12px;
+    border-radius: 8px;
+}
+
+/* Cada columna tiene 2 filas de 18 lugares */
+.column-block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* 2 filas por columna */
+    grid-template-rows: repeat(18, 1fr);    /* 18 lugares de largo */
+    gap: 2px;
+}
+
+/* Estilo de cada lugar individual */
+.spot {
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    font-size: 9px;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.spot:hover {
+    transform: scale(1.3);
+    z-index: 10;
+}
+
+.spot.available {
+    background-color: rgba(34, 197, 94, 0.9); /* Verde */
+}
+
+.spot.occupied {
+    background-color: rgba(239, 68, 68, 0.9); /* Rojo */
+}
